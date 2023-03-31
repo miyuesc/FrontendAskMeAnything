@@ -88,8 +88,8 @@ while (i <= e1 && i <= e2) {
 
 // 2. sync from end
 while (i <= e1 && i <= e2) {
-  const n1 = c1[i];
-  const n2 = c2[i];
+  const n1 = c1[e1];
+  const n2 = c2[e2];
   if (isSameVNodeType(n1, n2)) {
     patch(n1, n2);
   } else {
